@@ -21,6 +21,7 @@
 }
 
 .nav-link:hover {
+    color: #7D1D3F !important;
     border-style: solid; 
     border-width: 0 0 3px 0; 
     border-color: #7D1D3F;
