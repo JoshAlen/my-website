@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$( document ).ready(function() {
+    $(".box").click(function(){
+        $(".box").removeClass("box-animation");
+        $(this).addClass("box-animation");
+    });
+});
