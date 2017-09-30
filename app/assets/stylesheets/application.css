@@ -68,3 +68,8 @@
     transform: rotateX(360deg);
     transition: 1s ease-in-out;
 }
+
+.self-animation {
+    transform: rotateY(360deg);
+    transition: 1s ease-in-out;
+}

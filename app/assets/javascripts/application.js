@@ -16,8 +16,17 @@
 //= require_tree .
 
 $( document ).ready(function() {
+    
     $(".box").click(function(){
         $(".box").removeClass("box-animation");
         $(this).addClass("box-animation");
     });
+    
+    function addSelfAnimation(){
+        $(".self-ani").addClass("self-animation");
+    }
+    
+    setTimeout(addSelfAnimation, 2000);
+    
 });
+
