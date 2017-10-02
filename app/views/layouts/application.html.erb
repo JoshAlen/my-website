@@ -11,9 +11,42 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  
-  <%= csrf_meta_tags %>
-  
+  <script>
+      var quoteArr = [
+
+      "Don\'t cry because it's over, smile because it happened. ― Dr. Seuss",
+    
+      "Be yourself\; everyone else is already taken. ― Oscar Wilde",
+
+      "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. ― Albert Einstein",
+
+      "So many books, so little time. ― Frank Zappa",
+
+      "A room without books is like a body without a soul. ― Marcus Tullius Cicero",
+
+      "You only live once, but if you do it right, once is enough. ― Mae West",
+
+      "Be the change that you wish to see in the world. ― Mahatma Gandhi",
+
+      "In three words I can sum up everything I've learned about life: it goes on. ― Robert Frost",
+
+      "If you tell the truth, you don't have to remember anything. ― Mark Twain",
+
+      "A friend is someone who knows all about you and still loves you. ― Elbert Hubbard"
+
+    ];
+
+    var randomNumber = 0;
+
+    function getNumber() {
+      randomNumber = Math.floor(Math.random() * 10);
+      document.getElementById("quote").innerHTML = quoteArr[randomNumber];
+    };
+    
+  </script>
+
+<%= csrf_meta_tags %>
+      
 </head>
 <body>
   
