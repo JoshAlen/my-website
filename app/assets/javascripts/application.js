@@ -24,5 +24,5 @@ $(".box").click(function(){
     $(this).addClass("box-animation");
 });
 
-setTimeout(addSelfAnimation, 2000);
+// setTimeout(addSelfAnimation, 2000);
 

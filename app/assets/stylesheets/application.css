@@ -50,6 +50,7 @@
 .box:hover {
   border-left-color: #7D1D3F;
   border-right-color: #7D1D3F;
+  opacity: 0.5;
 }
 
 .linear-gradient-blue{

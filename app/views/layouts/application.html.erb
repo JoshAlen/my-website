@@ -45,18 +45,17 @@
     
   </script>
 
-<%= csrf_meta_tags %>
+  <%= csrf_meta_tags %>
       
 </head>
-<body>
+  <body>
+    
+    <%= render "layouts/header" %>
+    
+    <%= yield %>
+    
+    <%= render "layouts/footer" %>
   
-<%= render "layouts/header" %>
-
-<%= yield %>
-
-<%= render "layouts/footer" %>
-
-
-</body>
+  </body>
 </html>
 
