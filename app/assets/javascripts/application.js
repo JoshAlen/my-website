@@ -15,18 +15,14 @@
 //= require turbolinks
 //= require_tree .
 
-$( document ).ready(function() {
+function addSelfAnimation(){
+    $(".self-ani").addClass("self-animation");
+}
 
-    $(".box").click(function(){
-        $(".box").removeClass("box-animation");
-        $(this).addClass("box-animation");
-    });
-    
-    function addSelfAnimation(){
-        $(".self-ani").addClass("self-animation");
-    }
-    
-    setTimeout(addSelfAnimation, 2000);
-
+$(".box").click(function(){
+    $(".box").removeClass("box-animation");
+    $(this).addClass("box-animation");
 });
+
+setTimeout(addSelfAnimation, 2000);
 

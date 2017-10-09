@@ -53,15 +53,15 @@
 }
 
 .linear-gradient-blue{
-    background: #1ECDCE linear-gradient(to top left, #48A7D1 0%, #1ECDCE 100%);
+    background: #f7e28b linear-gradient(to top left, #cf396f 0%, #f7e28b 100%);
 }
 
 .linear-gradient-red {
-    background: #FF21D1 linear-gradient(to bottom right, #FF7400 0%, #FF21D1 100%);
+    background: #fd0f77 linear-gradient(to top left, #61258a 0%, #fd0f77 100%);
 }
 
 .linear-gradient-purple {
-    background: #4D5CC8 linear-gradient(101.12deg, #9E4FE0 0%, #4D5CC8 100%);
+    background: #ffb849 linear-gradient(to top left, #d20b54 0%, #ffb849 100%);
 }
 
 .box-animation {
@@ -71,5 +71,5 @@
 
 .self-animation {
     transform: rotateY(360deg);
-    transition: 1s ease-in-out;
+    transition: 1.0s ease-in-out;
 }
