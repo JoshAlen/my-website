@@ -74,3 +74,11 @@
     transform: rotateY(360deg);
     transition: 1.0s ease-in-out;
 }
+
+.font-nosifer {
+    font-family: 'Nosifer', cursive;
+}
+
+.text-shadow {
+    text-shadow: 1px 2px 3px grey;
+}
