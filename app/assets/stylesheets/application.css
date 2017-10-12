@@ -68,6 +68,10 @@ body > .container {
     background: #ffb849 linear-gradient(to top left, #d20b54 0%, #ffb849 100%);
 }
 
+.linear-gradient-grey {
+    background: #e3e0e0  linear-gradient(to top left, #7a7a7a 0%, #e3e0e0 100%);
+}
+
 .box-animation {
     transform: rotateX(360deg);
     transition: 1s ease-in-out;
@@ -84,4 +88,42 @@ body > .container {
 
 .text-shadow {
     text-shadow: 1px 2px 3px grey;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
 }
