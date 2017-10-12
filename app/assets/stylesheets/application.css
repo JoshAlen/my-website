@@ -12,6 +12,9 @@
  *= require_tree .
  *= require_self
  */
+body > .container {
+    padding-top: 60px;
+}
 
 .bottom-border {
     color: #7D1D3F !important;
