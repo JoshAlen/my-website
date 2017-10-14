@@ -1,0 +1,29 @@
+<div class="container mt-5 linear-gradient-purple" align="center">
+  <h2 class="text-white font-nosifer text-shadow">Admin Log in</h2>
+  
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="field">
+      <%= f.label :email, class: 'text-white text-shadow' %><br />
+      <%= f.email_field :email, autofocus: true %>
+    </div>
+  
+    <div class="field">
+      <%= f.label :password, class: 'text-white text-shadow' %><br />
+      <%= f.password_field :password, autocomplete: "off" %>
+    </div>
+  
+    <% if devise_mapping.rememberable? -%>
+      <div class="field">
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me, class: 'text-white text-shadow' %>
+      </div>
+    <% end -%>
+  
+    <div class="actions">
+      <%= f.submit "Log in", class: 'text-white btn-primary pr-5 pl-5 text-shadow' %>
+    </div>
+  <% end %>
+  
+  <%#= render "devise/shared/links" %>
+  <br/>
+</div>
