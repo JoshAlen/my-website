@@ -19,14 +19,16 @@
         <li class="nav-item">
           <a id="tributepage-link" class="nav-link" href="<%= free_code_camp_quotemachine_path %>">Quote Machine</a>
         </li>
-        
+        <li class="nav-item pull-right">
+          <%= link_to "Admin Login", new_user_session_path, class: 'nav-link' %>
+        </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
   
-        <%= link_to "Admin Login", new_user_session_path, class: 'nav-link' %>
+
 
     </div>
   </div>
