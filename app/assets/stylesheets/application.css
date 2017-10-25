@@ -128,3 +128,13 @@ body > .container {
 code {
   font-size: 80%;
 }
+
+/*my css*/
+
+.pet-image {
+    padding: 0 0;
+    margin: 0 0;
+    width: inherit;
+    height: inherit;
+    border-radius:7px;
+}
