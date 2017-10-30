@@ -36,6 +36,18 @@
     <%= yield %>
     
     <%= render "layouts/footer" %>
+   
+    <!--script load depending page-->
+    <script>
+    <%= 'function addSelfAnimation(){
+          $(".self-ani").addClass("self-animation");
+          }
+          
+          $(".box").click(function(){
+              $(".box").removeClass("box-animation");
+              $(this).addClass("box-animation");
+          });'.html_safe if current_page?('/') %>
+    </script>
 
   </body>
 </html>
