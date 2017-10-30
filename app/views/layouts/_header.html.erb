@@ -11,10 +11,10 @@
           <a class="nav-link <%= 'active-nav-link' if current_page?('/') %>" href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <%= 'active-nav-link' if current_page?('/free_code_camp/index') %>" href="<%= free_code_camp_index_path %>">FreeCodeCamp</a>
+          <a class="nav-link <%= 'active-nav-link' if current_page?('/free_code_camp/index') %>" href="<%= free_code_camp_index_path %>"><i class="fa fa-free-code-camp" aria-hidden="true"></i> FreeCodeCamp</a>
         </li>
         <li class="nav-item pull-right">
-          <a class="nav-link <%= 'active-nav-link' if current_page?('/users/sign_in') %>" href="<%= new_user_session_path %>">Admin SignIn<a/>
+          <a class="nav-link <%= 'active-nav-link' if current_page?('/users/sign_in') %>" href="<%= new_user_session_path %>"><i class="fa fa-sign-in" aria-hidden="true"></i> Admin SignIn<a/>
         </li>
       </ul>
       
