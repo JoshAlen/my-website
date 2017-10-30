@@ -15,14 +15,5 @@
 //= require turbolinks
 //= require_tree .
 
-function addSelfAnimation(){
-    $(".self-ani").addClass("self-animation");
-}
 
-$(".box").click(function(){
-    $(".box").removeClass("box-animation");
-    $(this).addClass("box-animation");
-});
-
-// setTimeout(addSelfAnimation, 2000);
 
