@@ -13,16 +13,14 @@
         <li class="nav-item">
           <a class="nav-link <%= 'active-nav-link' if current_page?('/free_code_camp/index') %>" href="<%= free_code_camp_index_path %>"><i class="fa fa-free-code-camp" aria-hidden="true"></i> FreeCodeCamp</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://codepen.io/Jseitz88/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i> My CodePen</a>
+        </li>
         <li class="nav-item pull-right">
-          <a class="nav-link <%= 'active-nav-link' if current_page?('/users/sign_in') %>" href="<%= new_user_session_path %>"><i class="fa fa-sign-in" aria-hidden="true"></i> Admin SignIn<a/>
+          <a class="nav-link <%= 'active-nav-link' if current_page?('/users/sign_in') %>" href="<%= new_user_session_path %>"><i class="fa fa-sign-in" aria-hidden="true"></i> Admin<a/>
         </li>
       </ul>
       
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-  
     </div>
   </div>
 </nav>
