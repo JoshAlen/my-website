@@ -157,3 +157,7 @@ code {
     height: inherit;
     border-radius:7px;
 }
+
+.profile_image {
+    border-radius: 50%;
+}
