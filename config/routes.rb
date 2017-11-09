@@ -7,9 +7,5 @@ Rails.application.routes.draw do
   get 'free_code_camp/index'
   get 'free_code_camp/tributepage'
   get 'free_code_camp/quotemachine'
-  
-  get 'other_projects/index'
-  get 'other_projects/draggablebox'
-  get 'other_projects/drawingbox'
-  
+
 end
