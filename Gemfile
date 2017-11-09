@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 #my gems
 gem 'bootstrap', '~> 4.0.0.alpha6'
-gem 'jquery-rails'
 gem 'devise'
 gem 'figaro'
 
