@@ -1,6 +1,6 @@
 <div class="container">
 
-    <h1 class="col-md-12 text-center">Create a new Recipe</h1>
+    <h1 class="col-md-12 text-center">Edit Recipe</h1>
     <hr class="mb-4">
     
     <div class="row">
@@ -48,9 +48,10 @@
                 </div>
             </div>
             <div class="col-sm-12 text-right">
-                <%= link_to "Return", recipes_path, class: "btn btn-dark"%> <%= f.submit 'Create Recipe', class: "btn btn-primary" %>
+                <%= link_to "Return", recipe_path(@recipe), class: "btn btn-dark"%> <%= f.submit 'Update Recipe', class: "btn btn-primary" %>
             </div>
             <% end %>
         </div>
     </div>
+    
 </div>

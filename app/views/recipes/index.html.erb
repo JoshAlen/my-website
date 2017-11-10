@@ -1,6 +1,6 @@
-<div class="container mt-5">
+<div class="container">
 
-        <h1>All Recipes</h1>
+        <h1>All Recipes <span class="text-right"><%= link_to "New Recipe", new_recipe_path, class: "btn btn-primary text-right"%></span></h1>
         <hr class="mb-4">
         <% @recipes.each do |recipe| %>
             <div class="row">

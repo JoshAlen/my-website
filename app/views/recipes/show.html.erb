@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container">
     <h1><%= @recipe.name %></h1>
     <hr class="mb-4">
     
@@ -17,7 +17,7 @@
         </div>
     </div>
      
-    <h5><%= link_to "Return", recipes_path, class: "btn btn-dark btn-small"%></h5>
+    <h5><%= link_to "Return", recipes_path, class: "btn btn-dark"%> <%= link_to "Edit Recipe", edit_recipe_path(@recipe), class: "btn btn-dark"%></h5>
 
     
 </div>
