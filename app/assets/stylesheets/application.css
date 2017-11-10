@@ -161,3 +161,8 @@ code {
 .profile_image {
     border-radius: 50%;
 }
+
+
+.gravatar {
+    border-radius: 10px;
+}

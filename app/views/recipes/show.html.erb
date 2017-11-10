@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <h1><%= @recipe.name %></h1>
+    <hr class="mb-4">
+    
+    <div class="row">
+        <div class="col-md-4">
+            <%= gravatar_for @recipe.chef, size: 200 %>
+            <p><h5>Brought to you by: <%= @recipe.chef.chefname %></h5></p>
+        </div>
+    
+        <div class="col-md-8">
+            <h3><%= @recipe.summary %></h3>
+            <div class="well">
+                <p><strong>Steps:</strong></p>
+                <p><%= @recipe.description %></p>
+            </div>
+        </div>
+    </div>
+     
+    <h5><%= link_to "Return", recipes_path, class: "btn btn-dark btn-small"%></h5>
+
+    
+</div>

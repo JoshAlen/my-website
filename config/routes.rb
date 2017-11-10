@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   
   devise_for :users
-  root 'welcome_pages#home'
-  get 'welcome_pages/about_me'
   
-  get 'free_code_camp/index'
-  get 'free_code_camp/tributepage'
-  get 'free_code_camp/quotemachine'
+  root 'welcome_pages#home'
+  get '/home', to: 'welcome_pages#home'
+  get '/welcome_pages/about_me', to: 'welcome_pages#about_me'
+  
+  get '/free_code_camp/index', to: 'free_code_camp#index'
 
+  resources :recipes
 end
