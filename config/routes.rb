@@ -8,5 +8,11 @@ Rails.application.routes.draw do
   
   get '/free_code_camp/index', to: 'free_code_camp#index'
 
-  resources :recipes
+  resources :recipes do
+    member do
+      post 'like'
+    end
+  end
+  
+  
 end

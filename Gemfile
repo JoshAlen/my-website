@@ -5,6 +5,8 @@ gem 'devise'
 gem 'figaro'
 gem 'carrierwave', '0.10.0'
 gem 'mini_magick', '3.8.0'
+gem 'will_paginate', '3.0.7'
+gem 'bootstrap-will_paginate'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
