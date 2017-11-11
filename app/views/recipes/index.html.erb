@@ -3,6 +3,7 @@
         <h1>All Recipes 
         <% if logged_in? %>
         <span class="text-right"><%= link_to "New Recipe", new_recipe_path, class: "btn btn-primary text-right"%></span>
+        <span><%= link_to 'View Profile', chef_path(current_user), class: "btn btn-dark" %></span>
         <span><%= link_to 'Logout', logout_path, class: 'btn btn-danger' %> </span>
         <% else %>
         <span><%= link_to 'Sign up now!', register_path, class: "btn btn-info" %></span>
