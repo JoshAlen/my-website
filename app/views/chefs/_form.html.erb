@@ -1,15 +1,10 @@
-<div class="container">
-
-    <h1 class="col-md-12 text-center">Create a new Recipe</h1>
-    <hr class="mb-4">
-    
     <div class="row">
-    <% if @recipe.errors.any? %>
+    <% if @chef.errors.any? %>
         
             <div class="alert alert-danger col-md-12">
                 <h5>Please correct the following errors:</h5>
                 <ul>
-                    <% @recipe.errors.full_messages.each do |message| %>
+                    <% @chef.errors.full_messages.each do |message| %>
                         <li><%= message %></li>
                     <% end %>
                 </ul>
@@ -17,42 +12,39 @@
         
     <% end %>
     </div>
-    
     <div class="row">
         <div class="col-md-12 text-center">
             
-            <%= form_for @recipe do |f| %>
+            <%= form_for @chef do |f| %>
             <div class="form-group row">
                 <div class="col-sm-3 text-right">
-                    <%= f.label :name, class:"col-form-label" %>
+                    <%= f.label :chefname, class:"col-form-label" %>
                 </div>
                 <div class="col-sm-9">
-                     <%= f.text_field :name, class: "form-control" %>
+                     <%= f.text_field :chefname, class: "form-control" %>
                 </div>
             </div>
             <div class="form-group row">
                 <div class="col-sm-3 text-right">
-                     <%= f.label :summary, class:"col-form-label" %>
+                     <%= f.label :email, class:"col-form-label" %>
                 </div>
                
                 <div class="col-sm-9">
-                    <%= f.text_field :summary, class: "form-control" %>
+                    <%= f.email_field :email, class: "form-control" %>
                 </div>
             </div>
             <div class="form-group row">
                 <div class="col-sm-3 text-right">
-                    <%= f.label :description, class: "col-form-label" %>
+                    <%= f.label :password, class: "col-form-label" %>
                 </div>
                 
                 <div class="col-sm-9">
-                    <%= f.text_area :description, rows: 5, class: "form-control" %>
+                    <%= f.password_field :password, class: "form-control" %>
                 </div>
             </div>
             <div class="col-sm-12 text-right">
-                <%= link_to "Return", recipes_path, class: "btn btn-dark"%> <%= f.submit 'Create Recipe', class: "btn btn-primary" %>
+                 <%= f.submit(@chef.new_record? ? 'Register' : 'Edit Profile', class: "btn btn-primary") %>
             </div>
             <% end %>
         </div>
     </div>
-    
-</div>

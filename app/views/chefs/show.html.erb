@@ -1,26 +1,16 @@
-<div class="container">
 
-        <h1>All Recipes 
-        <% if logged_in? %>
-        <span class="text-right"><%= link_to "New Recipe", new_recipe_path, class: "btn btn-primary text-right"%></span>
-        <span><%= link_to 'Logout', logout_path, class: 'btn btn-danger' %> </span>
-        <% else %>
-        <span><%= link_to 'Sign up now!', register_path, class: "btn btn-info" %></span>
-        <span><%= link_to 'Login', login_path, class: "btn btn-info" %></span>
-        <% end %>
-        </h1>
-        <hr class="mb-4">
-        <%= will_paginate %>
-        <% @recipes.each do |recipe| %>
-            <div class="row">
-                <div class="col-md-2">
-                    <section class="chef_info text-center">
-                        <%= link_to (gravatar_for recipe.chef, size: 100), chef_path(recipe.chef) %>
-                        <h5>Chef name: <%= recipe.chef.chefname %></h5>
-                    </section>
-                </div>
+
+<div class="container">
+    <h1>Chef: <%= @chef.chefname %></h1>
+    <hr class="mb-4">
+    <div class="row">
+            <div class="col-md-4">
+            <%= gravatar_for @chef, size: 200 %>
+            </div>
+            <div class="col-md-8">
+                <h3>Recipes:</h3>
                 
-                <div class="col-md-10 well">
+                <% @chef.recipes.each do |recipe| %>
                     <h4><%= link_to recipe.name, recipe_path(recipe) %></h4>
                     <p>
                         <%= recipe.summary %>
@@ -40,10 +30,7 @@
                         <span class="quiet"><small>created: <%= time_ago_in_words(recipe.created_at) %> | </small></span>
                         <span class="quiet"><small>updated:  <%= time_ago_in_words(recipe.updated_at) %></small></span>
                     </p>
-                    
-                </div>
+                <% end %>     
             </div>
-        <% end %>
-        <%= will_paginate %>
-        <hr/>
+    </div>
 </div>
