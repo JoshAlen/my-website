@@ -15,10 +15,11 @@
                         <%= label_tag :password, nil, class: 'col-form-label' %>
                         <%= password_field_tag :password, nil, class: 'form-control' %>
                 </div>
-
+                <%= link_to "Back", recipes_path, class: 'btn btn-dark' %>
                 <%= submit_tag 'Login', class: 'btn btn-success' %>
               
             <% end %>
+            
         </div>
 
     </div>

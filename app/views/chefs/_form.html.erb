@@ -43,8 +43,10 @@
                 </div>
             </div>
             <div class="col-sm-12 text-right">
+                 <%= link_to "Back", recipes_path, class: 'btn btn-dark' %>
                  <%= f.submit(@chef.new_record? ? 'Register' : 'Edit Profile', class: "btn btn-primary") %>
             </div>
             <% end %>
+            
         </div>
     </div>
