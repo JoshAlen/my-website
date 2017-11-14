@@ -22,8 +22,13 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link <%= 'active-nav-link' if current_page?('/recipes')%>" href="<%= recipes_path %>"> Food Recipes App</a>
+          <a class="nav-link <%= 'active-nav-link' if current_page?('/recipes')%>" href="<%= recipes_path %>"><i class="fa fa-cutlery" aria-hidden="true"></i> Food Recipes App</a>
         </li>
+        
+        <li class="nav-item">
+          <a class="nav-link <%= 'active-nav-link' if current_page?('/contacts/new')%>" href="<%= new_contact_path %>"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact Me</a>
+        </li>
+         
       </ul>
       
     </div>
