@@ -37,6 +37,9 @@
                             <%= recipe.thumbs_down_total %>
                         </div>
                     </p>
+                    <p><%= render recipe.styles %></p>
+                    <p><%= render recipe.ingredients %></p> 
+                    
                     <p>
                         <span class="quiet"><small>created: <%= time_ago_in_words(recipe.created_at) %> | </small></span>
                         <span class="quiet"><small>updated:  <%= time_ago_in_words(recipe.updated_at) %></small></span>
