@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  get 'contacts/new'
+
+  get 'contacts/create'
+
   devise_for :users
   
   root 'welcome_pages#home'
@@ -24,5 +28,6 @@ Rails.application.routes.draw do
   resources :styles, only: [:new, :create, :show]
   resources :ingredients, only: [:new, :create, :show]
   
+  resources :contacts, only: [:new, :create]
   
 end
