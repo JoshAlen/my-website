@@ -1,21 +1,22 @@
-<footer class="footer pt-2 pb-2 mt-1">
+<footer class="py-3">
   <div class="container">
-
-    <div class="col-sm-6 pull-right pr-0 pl-0">
-      <div class="pull-right">
-        <span>Need a website? Get in touch:</span>
-        <a class="pl-2 pr-2 text-dark" href="<%= new_contact_path %>"><i class="fa fa-envelope-o" aria-hidden="true"></i> Message </a>
-        <a class="text-dark" href="tel:4079067931"><i class="fa fa-mobile" aria-hidden="true"></i> Google Voice </a>
-      </div>
-    </div>
-
-    <div class="col-sm-6 pr-0 pl-0">
-      Connect with me: 
+    <div class="row">
       
-      <a class="pl-2 pr-2 text-dark" id="linkedin-link" href="https://www.linkedin.com/in/joshua-seitz-8250a397/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
-      <a class="text-dark" id="github-link" href="https://github.com/JoshAlen" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i> GitHub</a>    
-    </div>
-  </div>
+      <div class="col-md-6">
+          <span>Connect with me: &nbsp</span>
+          <span><a class="text-dark" id="linkedin-link" href="https://www.linkedin.com/in/joshua-seitz-8250a397/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></span>
+          <span>|&nbsp<a class="text-dark" id="github-link" href="https://github.com/JoshAlen" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i> GitHub</a></span>
+      </div>
+
+      <div class="col-md-6 text-md-right">
+            <span>Need a website? Get in touch:  &nbsp</span>
+            <span><a class="text-dark" href="<%= new_contact_path %>"><i class="fa fa-envelope-o" aria-hidden="true"></i> Message</a></span>
+            <span>|&nbsp<a class="text-dark" href="tel:4079067931"><i class="fa fa-mobile" aria-hidden="true"></i> Google Voice</a></span>
+      </div>
+      
+      </div>
+    </div> <!-- end of row -->
+   </div>  <!-- end of container -->
 </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
